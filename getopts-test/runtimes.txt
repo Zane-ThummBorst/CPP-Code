@@ -1,0 +1,22 @@
+Zane ThummBorst
+Faraz Pathan
+
+I pledge my honor that I have abided by the Stevens Honor System.
+
+
+./mtsieve -s100 -e200000000 -t1: real    0m4.706s
+
+./mtsieve -s100 -e200000000 -t2: real    0m3.396s
+
+./mtsieve -s100 -e200000000 -t3: real    0m2.726s
+
+./mtsieve -s100 -e200000000 -t4: real    0m2.598s
+
+
+CPU MODEL: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
+
+In our tests we can see that time improved does not scale linearly with the number of threads dedicated to the program.
+This is most apparent when we compare the improvements from 1 to 2 threads and from 3 to 4 threads. The gains from 1 to 2
+are quite high with an improvement of around 2 seconds. wher from 3 to 4 we gain around .1 seconds.It would seem that yes it does continue
+to improve, but with diminishing returns the more threads with an increase in threads dedicated.
+
